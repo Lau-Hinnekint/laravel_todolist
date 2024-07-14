@@ -13,7 +13,7 @@
                             <tr>
                                 <th class="px-2 py-2 text-xs text-gray-500">#</th>
                                 <th class="px-2 py-2 text-xs text-gray-500">@lang('Title')</th>
-                                <th class="px-2 py-2 text-xs text-gray-500">Etat</th>
+                                <th class="px-2 py-2 text-xs text-gray-500">@lang('State')</th>
                                 <th class="px-2 py-2 text-xs text-gray-500"></th>
                                 <th class="px-2 py-2 text-xs text-gray-500"></th>
                                 <th class="px-2 py-2 text-xs text-gray-500"></th>

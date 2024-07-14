@@ -77,13 +77,16 @@ De retour dans le terminal
 
 6. Exécutez les migrations de la base de données : 
 
-        php artisan migrate
+/!\     Une fois phpMyAdmin lancé commencer par aller modifier la variable "default storage engine" en "InnoDB", afin d'éviter des erreurs lors de la migration par rapport à la limite du nombre de caractères     /!\
 
-    /!\     Si une erreur se produit pour la création de la table "users" par rapport à la longueur des chaines de caractères, modifier dans phpMyAdmin la variable "default storage engine" en "InnoDB"    /!\
+/!\     Première solution : Rendez vous dans l'onglet "Variables" situé en haut de la page, chercher ensuite la ligne "defaut storage engine" paramétré en "MyIsam" actuellement. Cliquer sur éditer et modifier "MyIsam" par "InnoDB"    /!\
 
-    /!\                                             Commande à effectuer dans l'onglet "SQL" de phpMyAdmin =>       SET GLOBAL default_storage_engine = 'InnoDB';                                           /!\ 
+/!\     Deuxième solution : Commande à effectuer dans l'onglet "SQL" de phpMyAdmin => SET GLOBAL default_storage_engine = 'InnoDB';     /!\
 
-    /!\                                              Supprimer les tables crées dans la base de données et effectuer à nouveau la commande : php artisan migrate                                            /!\
+        Une fois ce paramètre modifier, rendez vous dans le terminal :
+        
+                php artisan migrate
+
 
 
 7. Lancer le serveur de développement : 

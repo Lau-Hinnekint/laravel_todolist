@@ -17,14 +17,21 @@
                     </x-nav-link>
                 </div>
 
-                <!-- Lien pour la liste des tâches -->
+                <!-- Link for contacts -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('contacts.index')" :active="request()->routeIs('contacts.index')">
+                        {{ __('Contacts') }}
+                    </x-nav-link>
+                </div>
+
+                <!-- Link for tasks -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
                         {{ __('Tasks list') }}
                     </x-nav-link>
                 </div>
 
-                <!-- Lien pour la création d'une tâche -->
+                <!-- Link for task creation -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('tasks.create')" :active="request()->routeIs('tasks.create')">
                         {{ __('Create a task') }}
