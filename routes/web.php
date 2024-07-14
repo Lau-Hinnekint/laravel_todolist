@@ -3,8 +3,10 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\ContactController;
  
 Route::resource('tasks', TaskController::class)->middleware('auth');
+Route::resource('contacts', ContactController::class)->middleware('auth');
 
 Route::get('/', function () {
     return view('welcome');

@@ -263,5 +263,11 @@
     "Date creation": "Date de création",
     "Last update": "Dernière modification",
     "Tasks List": "Liste des tâches",
-    "To do": "A faire"
+    "To do": "A faire",
+    "First name": "Prénom",
+    "Last name": "Nom",
+    "Phone": "Téléphone",
+    "Contact list": "Liste des contacts",
+    "Add contact": "Ajouter un contact",
+    "My contact": "Mes contacts"
 }
